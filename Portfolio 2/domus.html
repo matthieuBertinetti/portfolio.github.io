@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus — Matthieu Bertinetti</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Asset/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__group nav__group--left">
+                <a href="index.html" class="nav__mobile-link">Accueil</a>
+                <a href="index.html#projets" class="nav__link">Mes projets</a>
+            </div>
+            <a href="index.html" class="nav__logo" aria-label="Accueil">
+                <svg width="36" height="36" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.2187 6.06273L35.1603 0L34.9927 18.3217L30.0511 24.3844L30.2187 6.06273Z" fill="currentColor"/>
+                    <path d="M13.2288 12.919L12.4369 5.13745L25.2742 18.2106L26.0662 25.9922L13.2288 12.919Z" fill="currentColor"/>
+                    <path d="M6.06273 29.7811L0 24.8396L18.3217 25.0072L24.3844 29.9487L6.06273 29.7811Z" fill="currentColor"/>
+                    <path d="M12.9188 46.7712L5.13721 47.5631L18.2103 34.7258L25.9919 33.9338L12.9188 46.7712Z" fill="currentColor"/>
+                    <path d="M29.7813 53.9372L24.8397 59.9999L25.0073 41.6782L29.9488 35.6155L29.7813 53.9372Z" fill="currentColor"/>
+                    <path d="M46.7712 47.0795L47.5631 54.8611L34.7258 41.7879L33.9338 34.0063L46.7712 47.0795Z" fill="currentColor"/>
+                    <path d="M53.9373 30.2189L60 35.1604L41.6783 34.9928L35.6156 30.0513L53.9373 30.2189Z" fill="currentColor"/>
+                    <path d="M47.0795 13.229L54.8611 12.437L41.788 25.2743L34.0064 26.0663L47.0795 13.229Z" fill="currentColor"/>
+                </svg>
+            </a>
+            <div class="nav__group nav__group--right">
+                <a href="index.html#about" class="nav__link">A propos</a>
+                <a href="index.html#contact" class="nav__link">Me contacter</a>
+            </div>
+            <button class="nav__burger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="nav__mobile" id="mobileMenu">
+            <a href="index.html" class="nav__mobile-link">Accueil</a>
+            <a href="index.html#projets" class="nav__mobile-link">Mes projets</a>
+            <a href="index.html#about" class="nav__mobile-link">A propos</a>
+            <a href="index.html#contact" class="nav__mobile-link">Me contacter</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PROJET HERO -->
+        <section class="projet-hero">
+            <div class="projet-hero__inner">
+                <h1 class="projet-hero__title">DOMUS</h1>
+                <div class="projet-hero__mockup">
+                    <img src="Asset/Domus/Domus header.png" alt="Domus — Application maison connectée">
+                </div>
+            </div>
+            <div class="projet-meta">
+                <div class="projet-meta__item">
+                    <span class="projet-meta__label">DATE</span>
+                    <span class="projet-meta__value">2025</span>
+                </div>
+                <div class="projet-meta__item">
+                    <span class="projet-meta__label">RÔLE</span>
+                    <span class="projet-meta__value">UX/UI Designer</span>
+                </div>
+                <div class="projet-meta__item">
+                    <span class="projet-meta__label">COMPÉTENCES</span>
+                    <span class="projet-meta__value">Ux Design l UI Design</span>
+                </div>
+                <div class="projet-meta__item">
+                    <span class="projet-meta__label">OUTILS</span>
+                    <span class="projet-meta__value">Figma</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEXTE -->
+        <section class="objectif objectif--projet">
+            <div class="container_obj">
+                <h2 class="section-title section-title--light">
+                    CONTEXTE
+                    <svg class="title-arrow" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M56 56H0V49.0537H43.8428L0.989258 6.2002C0.801824 6.01267 0.696289 5.7583 0.696289 5.49316C0.696353 5.22805 0.801799 4.97361 0.989258 4.78613L4.78613 0.989258C4.9736 0.801794 5.22806 0.696371 5.49316 0.696289C5.7583 0.696289 6.01267 0.801824 6.2002 0.989258L49.0537 43.8428V0H56V56Z" fill="#F6F6F6"/>
+                    </svg>
+                </h2>
+                <div class="objectif__body">
+                    <p>Domus est une application de domotique pensée pour simplifier la gestion du quotidien à la maison. Dans un environnement où les objets connectés se multiplient, l’expérience utilisateur devient souvent fragmentée, avec plusieurs interfaces et logiques différentes à maîtriser.</p>
+                    <p>Le projet Domus s’inscrit dans cette problématique : centraliser le contrôle de la maison au sein d’une seule application, intuitive et accessible.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLÈME / SOLUTION -->
+        <section class="pb-solution">
+            <div class="pb-solution__grid">
+                <div class="pb-solution__col">
+                    <h2 class="pb-solution__heading">PROBLÈME</h2>
+                    <div class="pb-solution__separator"></div>
+                    <p>Aujourd'hui, on vit dans des maisons de plus en plus équipées, mais finalement très peu automatisées. On doit encore penser à tout : éteindre les appareils, lancer le lave-vaisselle, régler le chauffage…</p>
+                    <p>Ce sont des petites actions, mais mises bout à bout, elles prennent du temps et de l'énergie au quotidien. Le plus paradoxal, c'est que beaucoup de personnes possèdent déjà des objets connectés capables de le faire à leur place. Mais ces fonctionnalités restent peu utilisées, souvent parce qu'elles sont compliquées, mal centralisées ou peu intuitives. </br>Résultat : la technologie est là, mais elle ne simplifie pas vraiment la vie.</p>
+                </div>
+                <div class="pb-solution__col">
+                    <h2 class="pb-solution__heading">SOLUTION</h2>
+                    <div class="pb-solution__separator"></div>
+                    <p>Avec Domus, l'idée est simple : reprendre le contrôle et rendre la maison vraiment intelligente.</br>Grâce à une application unique, l'utilisateur peut gérer facilement tous ses équipements depuis son smartphone, sans complexité.</p>
+                    <p>Il peut automatiser ses tâches, programmer ses appareils et créer des routines adaptées à son quotidien. On se rapproche d'expériences fluides comme Google Home ou Apple Home, mais avec une approche plus simple et plus accessible.</br>Résultat : moins de charge mentale, plus de temps pour soi, et une maison qui travaille enfin pour nous, au lieu de dépendre de nous.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MÉTHODOLOGIE -->
+        <section class="methodologie">
+            <h2 class="section-title">
+                MÉTHODOLOGIE
+                <svg class="title-arrow title-arrow--dark" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M56 56H0V49.0537H43.8428L0.989258 6.2002C0.801824 6.01267 0.696289 5.7583 0.696289 5.49316C0.696353 5.22805 0.801799 4.97361 0.989258 4.78613L4.78613 0.989258C4.9736 0.801794 5.22806 0.696371 5.49316 0.696289C5.7583 0.696289 6.01267 0.801824 6.2002 0.989258L49.0537 43.8428V0H56V56Z" fill="#151515"/>
+                </svg>
+            </h2>
+            <div class="methodologie__layout">
+
+                <!-- Navigation numérotée -->
+                <div class="methodologie__steps">
+                    <button class="method-step method-step--active" data-step="1" aria-label="Étape 1">
+                        <span class="method-step__num">1</span>
+                    </button>
+                    <button class="method-step" data-step="2" aria-label="Étape 2">
+                        <span class="method-step__num">2</span>
+                    </button>
+                    <button class="method-step" data-step="3" aria-label="Étape 3">
+                        <span class="method-step__num">3</span>
+                    </button>
+                    <button class="method-step" data-step="4" aria-label="Étape 4">
+                        <span class="method-step__num">4</span>
+                    </button>
+                </div>
+
+                <!-- Contenu des étapes -->
+                <div class="methodologie__content">
+
+                    <!-- Étape 1 : Moodboard -->
+                    <div class="method-content method-content--active" data-content="1">
+                        <h3 class="methodologie__step-title">MOODBOARD</h3>
+                        <div class="moodboard__grid">
+                            <div class="moodboard__card moodboard__card--selected">
+                                <img src="Asset/Domus/Piste 1 2.png" alt="Piste n°1">
+                            </div>
+                            <div class="moodboard__card">
+                                <img src="Asset/Domus/Piste 3 2.png" alt="Piste n°3">
+                            </div>
+                            <div class="moodboard__card">
+                                <img src="Asset/Domus/Piste 2 2.png" alt="Piste n°2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Étape 2 : Insights utilisateurs -->
+                    <div class="method-content" data-content="2">
+                        <h3 class="methodologie__step-title">INSIGHTS UTILISATEURS</h3>
+                        <div class="insights__grid">
+                            <div class="insight-card">
+                                <h4 class="insight-card__title">INSIGHT 1</h4>
+                                <p class="insight-card__text">Les utilisateurs ne refusent pas la domotique, ils refusent la complexité. Même quand les fonctionnalités existent, elles demandent trop d'effort à configurer ou à comprendre. Résultat : ils préfèrent faire l'action eux-mêmes plutôt que de perdre du temps à automatiser.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4 class="insight-card__title">INSIGHT 2</h4>
+                                <p class="insight-card__text">Les utilisateurs possèdent plusieurs appareils connectés, mais chaque objet a sa propre logique, sa propre app, ses propres règles. Des apps comme Google Home ou Apple Home tentent de centraliser, mais restent encore peu exploitées ou mal comprises par le grand public.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4 class="insight-card__title">INSIGHT 3</h4>
+                                <p class="insight-card__text">Aujourd'hui, automatiser son quotidien n'est pas un comportement naturel. Les utilisateurs pensent encore en mode "action manuelle" plutôt qu'en mode "anticipation". Ils n'imaginent pas spontanément que leur maison puisse agir pour eux.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Étape 3 : Exploration -->
+                    <div class="method-content" data-content="3">
+                        <h3 class="methodologie__step-title">EXPLORATION</h3>
+                        <div class="method-image-wrap">
+                            <img src="Asset/Domus/Explorations 1.png" alt="Explorations UX">
+                        </div>
+                    </div>
+
+                    <!-- Étape 4 : Conception -->
+                    <div class="method-content" data-content="4">
+                        <h3 class="methodologie__step-title">CONCEPTION</h3>
+                        <div class="method-image-wrap">
+                            <img src="Asset/Domus/Conceptions.png" alt="Conception UI">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MOCKUPS -->
+        <section class="mockups-section">
+            <h2 class="section-title">
+                MOCKUPS
+                <svg class="title-arrow title-arrow--dark" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M56 56H0V49.0537H43.8428L0.989258 6.2002C0.801824 6.01267 0.696289 5.7583 0.696289 5.49316C0.696353 5.22805 0.801799 4.97361 0.989258 4.78613L4.78613 0.989258C4.9736 0.801794 5.22806 0.696371 5.49316 0.696289C5.7583 0.696289 6.01267 0.801824 6.2002 0.989258L49.0537 43.8428V0H56V56Z" fill="#151515"/>
+                </svg>
+            </h2>
+            <div class="mockups__grid">
+                <figure class="mockup-figure">
+                    <div class="mockup-figure__img-wrap">
+                        <img src="Asset/Domus/Mockup 1 1.png" alt="Écran de chargement">
+                    </div>
+                    <figcaption>Écran de chargement</figcaption>
+                </figure>
+                <figure class="mockup-figure">
+                    <div class="mockup-figure__img-wrap">
+                        <img src="Asset/Domus/Mockup 1 1-1.png" alt="Écran d'accueil">
+                    </div>
+                    <figcaption>Écran d'accueil</figcaption>
+                </figure>
+                <figure class="mockup-figure">
+                    <div class="mockup-figure__img-wrap">
+                        <img src="Asset/Domus/Mockup 1 1-2.png" alt="Écran de consommation & Partage d'accès">
+                    </div>
+                    <figcaption>Écran de consommation & Partage d'accès</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- AUTRES PROJETS -->
+        <section class="autres-projets">
+            <h2 class="section-title">
+                AUTRES PROJETS
+                <svg class="title-arrow title-arrow--dark" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M56 56H0V49.0537H43.8428L0.989258 6.2002C0.801824 6.01267 0.696289 5.7583 0.696289 5.49316C0.696353 5.22805 0.801799 4.97361 0.989258 4.78613L4.78613 0.989258C4.9736 0.801794 5.22806 0.696371 5.49316 0.696289C5.7583 0.696289 6.01267 0.801824 6.2002 0.989258L49.0537 43.8428V0H56V56Z" fill="#151515"/>
+                </svg>
+            </h2>
+            <div class="autres-projets__grid">
+
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="Asset/HomePage/Free_iPad_Mockup_1.png" alt="HUBTRUCK">
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags">
+                            <span class="tag">UX Design</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Product Design</span>
+                        </div>
+                        <h3 class="project-card__title">HUBTRUCK</h3>
+                        <p class="project-card__desc">Une application pensée pour centraliser, simplifier et personnaliser la gestion de la maison connectée. Mon rôle sur ce projet : Product Designer, avec un focus sur l'expérience utilisateur, la structuration des parcours et la conception d'interfaces claires.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="Asset/HomePage/Free_Iphone_15_Mockup_42.png" alt="WEAAPP">
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags">
+                            <span class="tag">UX Design</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Product Design</span>
+                        </div>
+                        <h3 class="project-card__title">WEAAPP</h3>
+                        <p class="project-card__desc">Une application pensée pour centraliser, simplifier et personnaliser la gestion de la maison connectée. Mon rôle sur ce projet : Product Designer, avec un focus sur l'expérience utilisateur, la structuration des parcours et la conception d'interfaces claires.</p>
+                    </div>
+                </article>
+
+                <a href="musee-dorsay.html" class="project-card-link">
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="Asset/HomePage/Free_MacBook_Pro_1.png" alt="Musée d'Orsay">
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags">
+                            <span class="tag">UX Design</span>
+                            <span class="tag">UX Research</span>
+                            <span class="tag">UI Design</span>
+                        </div>
+                        <h3 class="project-card__title">MUSÉE D'ORSAY</h3>
+                        <p class="project-card__desc">Une application pensée pour centraliser, simplifier et personnaliser la gestion de la maison connectée. Mon rôle sur ce projet : Product Designer, avec un focus sur l'expérience utilisateur, la structuration des parcours et la conception d'interfaces claires.</p>
+                    </div>
+                </article>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SECTION LOGO GRID -->
+    <section class="logo-section" id="contact">
+        <div class="logo-section__grid" id="logoGrid" aria-hidden="true"></div>
+        <div class="logo-section__content">
+            <img src="Asset/HomePage/Logo Horizontal.svg" alt="MABE" class="logo-section__logo">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/matthieu-bertinetti/" class="footer__social-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="Asset/HomePage/linkedin.svg" alt="" class="footer__social-icon">
+                </a>
+                <a href="mailto:matthieurobert10@gmail.com" class="footer__social-btn" aria-label="Email">
+                    <img src="Asset/HomePage/mail.svg" alt="" class="footer__social-icon">
+                </a>
+                <a href="tel:+33000000000" class="footer__social-btn" aria-label="Téléphone">
+                    <img src="Asset/HomePage/phone.svg" alt="" class="footer__social-icon">
+                </a>
+            </div>
+            <a href="mentions-legales.html" class="footer__legal">Mentions légales</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

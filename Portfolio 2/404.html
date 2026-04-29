@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page introuvable</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Asset/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            background: var(--color-light);
+            color: var(--color-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* ── Giant background number ── */
+        .e404__bg {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .e404__number {
+            font-family: var(--font-title);
+            font-size: clamp(200px, 35vw, 480px);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.05em;
+            color: transparent;
+            -webkit-text-stroke: 1.5px rgba(0,0,0,0.07);
+            user-select: none;
+            animation: glitch 6s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 90%, 100% { clip-path: none; transform: none; }
+            91%  { clip-path: inset(20% 0 60% 0); transform: translateX(-6px); }
+            92%  { clip-path: inset(60% 0 10% 0); transform: translateX(6px); }
+            93%  { clip-path: inset(40% 0 40% 0); transform: translateX(-4px); }
+            94%  { clip-path: none; transform: none; }
+        }
+
+        /* ── Grid of dots ── */
+        .e404__dots {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+
+        /* ── Center content ── */
+        .e404__center {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 32px;
+            padding: 40px;
+        }
+
+        /* ── Spinning asterisk ── */
+        .e404__logo {
+            width: 72px;
+            height: 72px;
+            animation: spin404 4s linear infinite;
+            color: var(--color-blue);
+        }
+
+        @keyframes spin404 {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ── Message ── */
+        .e404__label {
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.4);
+        }
+
+        .e404__message {
+            font-family: var(--font-title);
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            max-width: 520px;
+        }
+
+        .e404__sub {
+            font-size: var(--fs-p);
+            color: rgba(0,0,0,0.45);
+            max-width: 360px;
+            line-height: 1.6;
+        }
+
+        /* ── CTA ── */
+        .e404__cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 40px;
+            background: var(--color-blue);
+            color: var(--color-white);
+            font-family: var(--font-body);
+            font-size: var(--fs-p);
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            margin-top: 8px;
+        }
+
+        .e404__cta:hover {
+            background: #0336cc;
+            transform: translateY(-2px);
+        }
+
+        /* ── Cursor follower ── */
+        .e404__cursor {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(4,66,255,0.08) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 0;
+            transition: left 0.12s ease, top 0.12s ease;
+        }
+
+        /* ── Bottom ticker ── */
+        .e404__ticker {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            overflow: hidden;
+            border-top: 1px solid rgba(0,0,0,0.07);
+            padding: 14px 0;
+        }
+
+        .e404__ticker-track {
+            display: flex;
+            gap: 80px;
+            white-space: nowrap;
+            animation: ticker 18s linear infinite;
+        }
+
+        .e404__ticker-item {
+            font-family: var(--font-title);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.2);
+            flex-shrink: 0;
+        }
+
+        @keyframes ticker {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+
+        @media (max-width: 768px) {
+            .e404__message { font-size: 28px; }
+            .e404__logo { width: 52px; height: 52px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dot grid -->
+    <div class="e404__dots"></div>
+
+    <!-- Giant 404 behind -->
+    <div class="e404__bg">
+        <span class="e404__number">404</span>
+    </div>
+
+    <!-- Cursor glow -->
+    <div class="e404__cursor" id="cursor404"></div>
+
+    <!-- Center -->
+    <div class="e404__center">
+        <svg class="e404__logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M30.2187 6.06273L35.1603 0L34.9927 18.3217L30.0511 24.3844L30.2187 6.06273Z" fill="currentColor"/>
+            <path d="M13.2288 12.919L12.4369 5.13745L25.2742 18.2106L26.0662 25.9922L13.2288 12.919Z" fill="currentColor"/>
+            <path d="M6.06273 29.7811L0 24.8396L18.3217 25.0072L24.3844 29.9487L6.06273 29.7811Z" fill="currentColor"/>
+            <path d="M12.9188 46.7712L5.13721 47.5631L18.2103 34.7258L25.9919 33.9338L12.9188 46.7712Z" fill="currentColor"/>
+            <path d="M29.7813 53.9372L24.8397 59.9999L25.0073 41.6782L29.9488 35.6155L29.7813 53.9372Z" fill="currentColor"/>
+            <path d="M46.7712 47.0795L47.5631 54.8611L34.7258 41.7879L33.9338 34.0063L46.7712 47.0795Z" fill="currentColor"/>
+            <path d="M53.9373 30.2189L60 35.1604L41.6783 34.9928L35.6156 30.0513L53.9373 30.2189Z" fill="currentColor"/>
+            <path d="M47.0795 13.229L54.8611 12.437L41.788 25.2743L34.0064 26.0663L47.0795 13.229Z" fill="currentColor"/>
+        </svg>
+
+        <span class="e404__label">Erreur 404</span>
+        <p class="e404__message">Cette page s'est perdue quelque part dans le design.</p>
+        <p class="e404__sub">La page que vous cherchez n'existe pas ou a été déplacée.</p>
+        <a href="index.html" class="e404__cta">
+            Retour au portfolio
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+
